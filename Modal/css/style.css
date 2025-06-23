@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: .6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: .25rem;
+    background-color: #9999;
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+#fade, #modal{
+    opacity: 1;
+    transition: .8s;
+    pointer-events: all;
+}
+
+#abrirmodal {
+    background-color: #007bff;
+}
+
+button:hover {
+    opacity: 1.5;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.modalheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top: 0;
+}
