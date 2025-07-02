@@ -1,0 +1,167 @@
+#page {
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    background-color: rgba(222, 222, 213);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#novatarefa {
+    height: 45px;
+    width: 100px;
+    border-radius: .60rem;
+    background-color: rgba(7, 40, 112, 0.986);
+    color: white;
+    border: none;
+    transition: 0.2s;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#novatarefa:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+#boxremover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#boxremover.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#boxremover2 {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+#boxremover.show #boxremover2 {
+    transform: scale(1);
+}
+
+#botaosim {
+    font-size: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: .50rem;
+    background-color: green;
+}
+
+#botaonao {
+    font-size: 1rem;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: .50rem;
+    background-color: red;
+}
+
+#box.show {
+    opacity: 1;
+    pointer-events: all;
+    transforme: scale(-50%, -50%);
+}
+
+#box {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#subbox {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#btni {
+    font-size: 2rem;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: .50rem;
+}
+
+#btni:hover {
+    transform: scale(1.05);
+}
+
+#box input {
+    border: none;
+    padding: 15px;
+    border-radius: .50rem;
+    font-size: 1rem;
+}
+
+#lista {
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 20px;
+}
+
+#novoitemlista {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+
+.confirmar {
+    text-decoration: line-through;
+}
+
+.botao-remover {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: red;
+    padding: 0;
+    font-size: 23px;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.botao-remover:hover {
+    transform: scale(1.20);
+    color: red;
+    opacity: 1;
+}

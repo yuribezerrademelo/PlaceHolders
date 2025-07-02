@@ -1,0 +1,40 @@
+Passo 1 — Estrutura HTML
+<input> para digitar tarefa
+
+<button> para adicionar
+
+<ul> para listar tarefas
+______________________________________________________
+Passo 2 — Adicionar Tarefas
+Função adicionarTarefa()
+
+Pega o valor do input
+
+Cria <li> com:
+
+Texto da tarefa
+
+Botão remover
+
+Insere na <ul>
+
+Limpa o input
+______________________________________________________
+Passo 3 — Marcar como Concluída
+Ao clicar no texto da tarefa:
+
+Alterna classe .concluida
+
+CSS aplica text-decoration: line-through
+______________________________________________________
+Passo 4 — Remover Tarefa
+Botão "❌" em cada <li>
+
+Função removerTarefa()
+
+Remove o item clicado
+______________________________________________________
+Passo 5 — Salvar com localStorage
+salvarTarefas() → salva lista como JSON
+
+carregarTarefas() → carrega tarefas salvas e renderiza
